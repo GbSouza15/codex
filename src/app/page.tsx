@@ -1,4 +1,5 @@
 import {Nav} from "@/components/Nav/Nav";
+import { FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
 import imgClient from '../../public/client.svg'
 import imgCheck from '../../public/check.svg'
@@ -73,6 +74,30 @@ export default function Home() {
                 </ul>
             </div>
             <button className='text-sm text-secondaryColor bg-fourthColor w-[145px] h-[40px] mt-9 lg:mt-16'>Consulte-nos</button>
+        </div>
+        {/* Contact */}
+        <div className='flex flex-col items-center mt-28 px-4'>
+            <h1 className='text-2xl font-bold min-[990px]:text-4xl xl:text-[48px]'>Entre em Contato</h1>
+            <div className='mt-9 lg:mt-16'>
+                <ul className='flex flex-col items-center gap-6 text-center lg:flex-row lg:gap-12 lg:grid lg:grid-cols-2 lg:text-start lg:items-stretch xl:gap-x-36'>
+                    <li className='flex flex-col items-center gap-2 lg:items-start'>
+                        <FaWhatsapp />
+                        <h1 className='text-xl font-bold'>Desenvolvimento de Sistemas Web</h1>
+                    </li>
+                    <li className='flex flex-col items-center gap-2 lg:items-start'>
+                        <h1 className='text-xl font-bold'>Integrações Poderosas</h1>
+                        <p className='text-base max-w-[548px]'>Facilitamos a conectividade entre sistemas, garantindo que suas ferramentas funcionem em harmonia. Desde integrações de APIs até conexões mais complexas, trabalhamos para maximizar a eficiência operacional e proporcionar uma experiência de usuário perfeita.</p>
+                    </li>
+                    <li className='flex flex-col items-center gap-2 lg:items-start'>
+                        <h1 className='text-xl font-bold'>Manutenção e Suporte</h1>
+                        <p className='text-base max-w-[548px]'>Nossos serviços de manutenção garantem atualizações contínuas, enquanto o suporte dedicado está sempre pronto para atender às suas necessidades, proporcionando tranquilidade para o seu negócio online.</p>
+                    </li>
+                    <li className='flex flex-col items-center gap-2 lg:items-start'>
+                        <h1 className='text-xl font-bold'>Treinamento e Capacitação</h1>
+                        <p className='text-base max-w-[548px]'>Oferta de programas de treinamento para capacitar equipes no uso eficaz das soluções web desenvolvidas.</p>
+                    </li>
+                </ul>
+            </div>            
         </div>
     </div>
   )
