@@ -53,7 +53,7 @@ export default function Home() {
         <div className='flex flex-col items-center mt-28 px-4'>
             <h1 className='text-2xl font-bold min-[990px]:text-4xl xl:text-[48px]'>Nossos Serviços</h1>
             <div className='mt-9 lg:mt-16'>
-                <ul className='flex flex-col items-center gap-6 text-center lg:flex-row lg:gap-12 lg:grid lg:grid-cols-2 lg:text-start xl:gap-x-36'>
+                <ul className='flex flex-col items-center gap-6 text-center lg:flex-row lg:gap-12 lg:grid lg:grid-cols-2 lg:text-start lg:items-stretch xl:gap-x-36'>
                     <li className='flex flex-col items-center gap-2 lg:items-start'>
                         <h1 className='text-xl font-bold'>Desenvolvimento de Sistemas Web</h1>
                         <p className='text-base max-w-[548px]'>Transforme suas ideias em soluções digitais. Criamos sistemas web personalizados, desde concepção até implementação, alinhados às necessidades exclusivas do seu negócio.</p>
