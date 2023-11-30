@@ -107,9 +107,9 @@ export default function Home() {
             </div>            
         </div>
         {/* More Questions */}
-        <div className='mt-28 px-4 '>
+        <div className='mt-28 px-4 bg-primaryColor text-secondaryColor pt-20 pb-20'>
             <h1 className='text-2xl font-bold text-center min-[990px]:text-4xl xl:text-[48px]'>Perguntas Frequentes</h1>
-            <div className="mx-auto max-w-[358px] md:max-w-[560px] lg:max-w-[900px] mt-16">
+            <div className="mx-auto max-w-[358px] md:max-w-[600px] lg:max-w-[900px] mt-16">
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                         <AccordionTrigger>Is it accessible?</AccordionTrigger>
