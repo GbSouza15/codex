@@ -2,6 +2,13 @@ import {Nav} from "@/components/Nav/Nav";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+  } from "@/components/ui/accordion"
+  
 import Image from "next/image";
 import imgClient from '../../public/client.svg'
 import imgCheck from '../../public/check.svg'
@@ -98,6 +105,38 @@ export default function Home() {
                     </li>
                 </ul>
             </div>            
+        </div>
+        {/* More Questions */}
+        <div className='mt-28 px-4 '>
+            <h1 className='text-2xl font-bold text-center min-[990px]:text-4xl xl:text-[48px]'>Perguntas Frequentes</h1>
+            <div className="mx-auto max-w-[358px] md:max-w-[560px] lg:max-w-[900px] mt-16">
+                <Accordion type="single" collapsible>
+                    <AccordionItem value="item-1">
+                        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-2">
+                        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-3">
+                        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-4">
+                        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
+            </div>
         </div>
     </div>
   )
