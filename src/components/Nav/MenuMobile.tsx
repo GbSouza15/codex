@@ -17,8 +17,8 @@ export function MenuMobile() {
             </div>
 
             {menuActive && (
-                <div className='absolute bg-primaryColor left-0 right-0'>
-                    <ul className='text-secondaryColor flex flex-col gap-5 z-10 items-center py-10'>
+                <div className='absolute bg-secondaryColor top-[88px] left-0 right-0'>
+                    <ul className='text-primaryColor flex flex-col gap-5 z-10 items-center py-10'>
                         <li>Opção 1</li>
                         <li>Opção 2</li>
                         <li>Opção 3</li>
