@@ -14,8 +14,8 @@ import imgClient from '../../public/client.svg'
 import imgCheck from '../../public/check.svg'
 import imgIdea from '../../public/idea.svg'
 import imgRun from '../../public/run.svg'
-import imgTalks from '../../public/talks-bro.svg'
-import imgDigitalTransformation from '../../public/digital-transformation.svg'
+import imgLogoFooter from '../../public/logo-footer.svg'
+import imgHero from '../../public/imgHero.svg'
 
 export default function Home() {
   return (
@@ -27,17 +27,17 @@ export default function Home() {
                 <div className='flex flex-col items-center text-center text-secondaryColor max-w-[358px] lg:max-w-[520px] lg:text-start lg:items-start'>
                     <h1 className='text-2xl font-bold min-[990px]:text-4xl xl:text-[48px]'>Desenvolvimento de Sistemas Web Personalizados</h1>
 
-                    <p className='text-base mt-6 min-[990px]:text-lg'>Transformamos suas ideias em realidade digital. Desenvolva soluções web eficientes e inovadoras com a expertise da CodeX Studio.</p>
+                    <p className='text-base mt-6 min-[990px]:text-lg'>Transformamos suas ideias em realidade digital. Desenvolva soluções web eficientes e inovadoras com a expertise da Codex Studio.</p>
 
                     <button className='text-sm text-secondaryColor bg-fourthColor w-[145px] h-[40px] mt-12'>Consulte-nos</button>
                 </div>
 
-                <Image className='w-[300px] mt-8 lg:w-[450px] min-[990px]:w-[450px]' src={imgDigitalTransformation} alt="Talks"/>
+                <Image className='w-[300px] lg:w-[450px] min-[990px]:w-[450px]' src={imgHero} alt="Img Hero"/>
             </div>
         </div>
         {/*Methodology*/}
         <div className='flex flex-col items-center mt-28'>
-            <h1 className='text-2xl font-bold min-[990px]:text-4xl xl:text-[48px]'>Nossa Metodologia</h1>
+            <h1 className='text-2xl font-bold min-[990px]:text-4xl xl:text-[48px]'>Metodologia</h1>
             <div className='mt-9 lg:mt-16'>
                 <ul className='flex flex-col items-center gap-4 lg:flex-row lg:gap-12 xl:gap-36'>
                     <li className='flex flex-col items-center gap-2 text-base min-[990px]:text-lg'>
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         {/*Services*/}
         <div className='flex flex-col items-center mt-28 px-4'>
-            <h1 className='text-2xl font-bold min-[990px]:text-4xl xl:text-[48px]'>Nossos Serviços</h1>
+            <h1 className='text-2xl font-bold min-[990px]:text-4xl xl:text-[48px]'>Serviços</h1>
             <div className='mt-9 lg:mt-16 lg:flex lg:flex-col lg:items-center'>
                 <ul className='flex flex-col items-center gap-6 text-center lg:gap-12 lg:grid lg:grid-cols-2 lg:text-start lg:items-stretch xl:gap-x-36'>
                     <li className='flex flex-col items-center gap-2 lg:items-start'>
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
         {/* Contact */}
         <div className='flex flex-col items-center mt-28 px-4'>
-            <h1 className='text-2xl font-bold mb-4 min-[990px]:text-4xl xl:text-[48px] text-center'>Nossos Canais de Comunicação</h1>
+            <h1 className='text-2xl font-bold mb-4 min-[990px]:text-4xl xl:text-[48px] text-center'>Canais de Comunicação</h1>
             <p className='text-base text-center'>Informações de contato para manter o diálogo sempre aberto.</p>
             <div className='mt-8 lg:mt-16'>
                 <ul className='flex flex-col items-center gap-6 text-center lg:flex-row lg:gap-12 lg:text-start lg:items-stretch xl:gap-x-36'>
@@ -107,7 +107,7 @@ export default function Home() {
             </div>            
         </div>
         {/* More Questions */}
-        <div className='mt-28 px-4 bg-primaryColor text-secondaryColor pt-20 pb-20'>
+        <div className='mt-28 px-4 bg-[#697077] text-secondaryColor pt-20 pb-20'>
             <h1 className='text-2xl font-bold text-center min-[990px]:text-4xl xl:text-[48px]'>Perguntas Frequentes</h1>
             <div className="mx-auto max-w-[358px] md:max-w-[600px] lg:max-w-[900px] mt-16">
                 <Accordion type="single" collapsible>
@@ -138,6 +138,18 @@ export default function Home() {
                 </Accordion>
             </div>
         </div>
+        {/* Footer */}
+        <footer className="bg-primaryColor text-secondaryColor flex justify-center py-8">
+            <div className="md:max-w-[1440px] flex flex-col items-center gap-8 lg:flex-row lg:justify-center">
+                <Image className="w-[98px]" src={imgLogoFooter} alt="Logo Footer"/>
+                <p className="text-xs">Codex Studio @ 2023. All rights reserved.</p>
+                <ul className="flex items-center gap-4">
+                    <li><FaWhatsapp color='#ffffff' size='18px'/></li>
+                    <li><MdOutlineEmail color='#ffffff' size='18px'/></li>
+                    <li><FaInstagram color='#ffffff' size='18px'/></li>
+                </ul>
+            </div>
+        </footer>
     </div>
   )
 }
