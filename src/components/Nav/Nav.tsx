@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { MenuMobile } from "@/components/Nav/MenuMobile";
 import Image from "next/image";
-import logoSvg from "../../../public/logo.svg"
+import logoLanding from "../../../public/logoLanding.svg"
 
 export function Nav() {
 
@@ -10,7 +9,7 @@ export function Nav() {
             <div className="w-full flex items-center justify-between md:max-w-[1440px] px-4 py-7 md:px-12">
                 <div className='flex items-center justify-between w-full'>
                     <Link href="/">
-                        <Image className="w-[98px]" src={logoSvg} alt="Logo"/>
+                        <Image className="w-[98px]" src={logoLanding} alt="Logo"/>
                     </Link>
 
                     <div className="hidden md:block">
@@ -21,7 +20,6 @@ export function Nav() {
                         </ul>
                     </div>
                 </div>
-                <MenuMobile/>
             </div>
         </div>
     )
