@@ -6,7 +6,7 @@ import styleBg from "./style.module.css"
 export default function Home() {
   return (
     <>
-    oioioioioio
+    asjdhjasdadashdhasdhasdhashd
         <Nav/>
         {/* Hero */}
         <section className={styleBg.backgroundSection}>
