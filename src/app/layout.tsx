@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import '../styles/globals.css'
 
-const roboto = Roboto({
+const inter = Inter({
   weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap'
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={roboto.className}>
+      <body className={inter.className}>
         {children}
       </body>
     </html>

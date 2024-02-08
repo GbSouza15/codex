@@ -1,6 +1,18 @@
 .backgroundSection {
     background-image: url('../../public/images/bgMobileLanding.svg'); /* Caminho para a sua imagem */
     background-size: cover; /* Ajuste para cobrir toda a área */
-    height: 741px;
+    height: 825px;
     /* Adicione outros estilos conforme necessário */
+  }
+
+  .backgroundSection2 {
+    background-image: url('../../public/bgMobile2.svg'); /* Caminho para a sua imagem */
+    background-size: cover; /* Ajuste para cobrir toda a área */
+    height: 900px;
+  }
+
+  .backgroundSection3 {
+    background-image: url('../../public/cardMobile.svg'); /* Caminho para a sua imagem */
+    background-size: cover; /* Ajuste para cobrir toda a área */
+    height: 468px;
   }
