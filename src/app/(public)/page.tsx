@@ -1,12 +1,9 @@
 import {Nav} from "@/components/Nav/Nav";
-import Image from "next/image";
-import bgMobileLanding from "../../public/bgMobileLanding.svg"
-import styleBg from "./style.module.css"
+import styleBg from "../style.module.css"
 
 export default function Home() {
   return (
     <>
-    asjdhjasdadashdha
         <Nav/>
         {/* Hero */}
         <section className={styleBg.backgroundSection}>
