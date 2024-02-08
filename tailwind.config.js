@@ -9,6 +9,9 @@ module.exports = {
 	],
   theme: {
     extend: {
+        backgroundImage: {
+          'hero-pattern': "url('./public/images/bgMobileLanding.svg')",
+        },
       colors: {
         primaryColor: '#04091C',
         secondaryColor: '#FFFFFF',

@@ -10,6 +10,9 @@ import trainingSvg from "../../../public/training.svg"
 import styleBg from "../style.module.css"
 import checkIcon from "../../../public/checkIcon.svg"
 import logoBlack from "../../../public/logoBlack.svg"
+import twitterIcon from "../../../public/twitter.svg"
+import instagramIcon from "../../../public/instagram.svg"
+import whatsappIcon from "../../../public/whatsapp.svg"
 
 
 export default function Home() {
@@ -17,7 +20,7 @@ export default function Home() {
     <div>
         <Nav/>
         {/* Hero */}
-        <section className={`${styleBg.backgroundSection}`}>
+        <section className="bg-[url('../../../public/images/bgMobileLanding.svg')]">
             <div className="pt-[130px]">
                 <h1 className="leading-[110%] font-bold text-bold text-white text-[44px] px-4 max-w-[354px]">Gerencie seu estoque de uma  forma mais eficiente.</h1>
                 <p className="text-white leading-[140%] px-4 text-lg pt-6 max-w-[364px]">Otimize seus recursos e maximize sua produtividade com nosso sistema de gestão de estoque eficiente.</p>
@@ -33,10 +36,10 @@ export default function Home() {
                 </div>
         </section>
 
-        <section className={`${styleBg.backgroundSection2} mt-[410px]`}>
+        <section className={`${styleBg.backgroundSection2} mt-[280px]`}>
             <h1 className="text-white font-bold text-[44px] px-4 pt-16 max-w-[354px] leading-[110%]">Nossa especialidade, é impulsionar seus projetos.</h1>
 
-            <div className="px-4 pt-[52px] flex flex-col gap-8">
+            <div className="px-4 pt-[52px] pb-16 flex flex-col gap-8">
                 <div className="max-w-[354px]">
                     <h2 className="text-white font-bold text-3xl">Eficiência Operacional.</h2>
                     <p className="text-[#A0B2FF] text-base leading-[140%] mt-[10px]">Otimize seus processos com nosso sistema de gerenciamento de estoque. Ganhe eficiência e mantenha seu negócio em pleno funcionamento.</p>
@@ -81,11 +84,11 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="pb-24">
+        <section>
             <div className="px-4 mt-20">
-                <h1 className="text-[44px] font-bold leading-[110%]">Um <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">investimento para cada necessidade.</span></h1>
+                <h1 className="text-[42px] font-bold leading-[110%]">Um <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">investimento para cada necessidade.</span></h1>
             </div>
-            <div className={`${styleBg.backgroundSection3} mx-[18px] mt-14 px-6`}>
+            <div className={`${styleBg.backgroundSection3} w-[354px] h-[468px] mx-[18px] mt-14 px-6`}>
                 <p className="text-2xl pt-9 text-[#696C77]">Plano Básico</p>
                 <p className="text-white text-[54px] font-bold mt-6">R$ 49,99<span className="text-white font-bold text-base">/mês</span></p>
 
@@ -111,9 +114,9 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="mt-8 px-4">
+        <section className="px-4">
             <div>
-                <h1 className="font-bold text-[64px] leading-[110%]">Precisa <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">conversar</span>? Entre em contato.</h1>
+                <h1 className="mt-24 font-bold text-[44px] leading-[110%]">Precisa <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">conversar</span>? Entre em contato.</h1>
 
                 <div className="flex items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[275px] h-12 mt-12">
                     <p className="ml-4 font-medium">Mensagen via whastapp</p>
@@ -124,10 +127,56 @@ export default function Home() {
             </div>
         </section>
 
-        <footer className="mt-52 px-4">
+        <footer className="mt-52 px-4 pb-8">
             <div>
                 <Image src={logoBlack} alt="logoBlack"/>
                 <p className="text-[#909395] text-2xl leading-[33.6px] mt-6">Desenvolvimento de sistema web personalizados.</p>
+            </div>
+
+            <div className="mt-16">
+                <p className="text-base font-semibold">Redes</p>
+                <div className="mt-6">
+                    <ul className="flex items-center gap-[18px]">
+                        <li>
+                            <Image src={twitterIcon} alt="twitterIcon"/>
+                        </li>
+                        <li>
+                            <Image src={instagramIcon} alt="instagramIcon"/>
+                        </li>
+                        <li>
+                            <Image src={whatsappIcon} alt="whatsappIcon"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="flex mt-16 gap-6">
+                <div>
+                    <p className="text-base font-semibold">Página</p>
+                    <ul className="mt-6 flex flex-col gap-3">
+                        <li className="text-base text-[#909395]">Nossos serviços</li>
+                        <li className="text-base text-[#909395]">Especialidades</li>
+                        <li className="text-base text-[#909395]">Fale conosco</li>
+                        <li className="text-base text-[#909395]">Preços</li>
+                    </ul>
+                </div>
+                <div>
+                    <p className="text-base font-semibold">Redes</p>
+                    <ul className="mt-6 flex flex-col gap-3">
+                        <li className="text-base text-[#909395]">Twitter</li>
+                        <li className="text-base text-[#909395]">Instagram</li>
+                        <li className="text-base text-[#909395]">Whatsapp</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="mt-16">
+                 <p className="text-base text-[#909395]">©2024 CodeX, Inc.</p>
+                <div className="flex items-center gap-6 mt-6">
+                    <p className="text-base text-[#909395]">Termos e serviços</p>
+                    <p className="text-base text-[#909395]">Privacidade</p>
+                    <p className="text-base text-[#909395]">Cookies</p>
+                </div>
             </div>
         </footer>
     </div>

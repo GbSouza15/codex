@@ -8,7 +8,6 @@
   .backgroundSection2 {
     background-image: url('../../public/bgMobile2.svg'); /* Caminho para a sua imagem */
     background-size: cover; /* Ajuste para cobrir toda a área */
-    height: 900px;
   }
 
   .backgroundSection3 {
