@@ -1,5 +1,5 @@
 .backgroundSection {
-    background-image: url('../../public/bgMobileLanding.svg'); /* Caminho para a sua imagem */
+    background-image: url('../../public/images/bgMobileLanding.svg'); /* Caminho para a sua imagem */
     background-size: cover; /* Ajuste para cobrir toda a área */
     height: 100vh; /* Ajuste conforme necessário */
     /* Adicione outros estilos conforme necessário */

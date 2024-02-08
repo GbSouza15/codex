@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoLanding from "../../../public/logoLanding.svg"
+import logoLanding from "../../../public/images/logoLanding.svg"
 
 export function Nav() {
 
