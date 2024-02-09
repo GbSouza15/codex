@@ -20,7 +20,7 @@ export default function Home() {
     <div>
         <Nav/>
         {/* Hero */}
-        <section className="bg-[url('../../../public/images/bgMobileLanding.svg')]">
+        <section className="bg-[url('/images/bgMobileLanding.svg')] bg-cover h-[825px]">
             <div className="pt-[130px]">
                 <h1 className="leading-[110%] font-bold text-bold text-white text-[44px] px-4 max-w-[354px]">Gerencie seu estoque de uma  forma mais eficiente.</h1>
                 <p className="text-white leading-[140%] px-4 text-lg pt-6 max-w-[364px]">Otimize seus recursos e maximize sua produtividade com nosso sistema de gestão de estoque eficiente.</p>
@@ -36,7 +36,7 @@ export default function Home() {
                 </div>
         </section>
 
-        <section className={`${styleBg.backgroundSection2} mt-[280px]`}>
+        <section className="bg-[url('/images/bgMobile2.svg')] bg-cover mt-[280px]">
             <h1 className="text-white font-bold text-[44px] px-4 pt-16 max-w-[354px] leading-[110%]">Nossa especialidade, é impulsionar seus projetos.</h1>
 
             <div className="px-4 pt-[52px] pb-16 flex flex-col gap-8">
@@ -88,7 +88,7 @@ export default function Home() {
             <div className="px-4 mt-20">
                 <h1 className="text-[42px] font-bold leading-[110%]">Um <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">investimento para cada necessidade.</span></h1>
             </div>
-            <div className={`${styleBg.backgroundSection3} w-[354px] h-[468px] mx-[18px] mt-14 px-6`}>
+            <div className="bg-[url('/images/cardMobile.svg')] bg-cover w-[354px] h-[468px] mx-[18px] mt-14 px-6">
                 <p className="text-2xl pt-9 text-[#696C77]">Plano Básico</p>
                 <p className="text-white text-[54px] font-bold mt-6">R$ 49,99<span className="text-white font-bold text-base">/mês</span></p>
 
