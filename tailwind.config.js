@@ -8,6 +8,11 @@ module.exports = {
     './src/**/*.{ts,tsx}',
 	],
   theme: {
+    screens: {
+      'base': '0px',
+      'sm': '500px',
+      'md': '810px',
+    },
     extend: {
       colors: {
         primaryColor: '#04091C',
