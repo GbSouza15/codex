@@ -150,12 +150,14 @@ export default function Home() {
       <section className="px-4 sm:px-0 sm:flex sm:flex-col sm:items-center">
         <div className="max-w-[354px] md:max-w-[540px] lg:max-w-[600px] lg:flex lg:flex-col lg:items-center">
           <h1 className="mt-24 md:mt-72 lg:mt-28 font-bold text-[44px] md:text-[64px] leading-[110%]">Precisa <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">conversar</span>? Entre em contato.</h1>
-          <div className="flex items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[285px] h-12 mt-12">
-            <p className="ml-4 font-medium">Mensagem via WhatsApp</p>
-            <div className="bg-white rounded-full p-2 mr-2">
-              <Image src={arrowRightBlack} alt="arrowRight" />
+          <Link href="https://wa.me/5579996548883">
+            <div className="flex items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[285px] h-12 mt-12">
+              <p className="ml-4 font-medium">Mensagem via WhatsApp</p>
+              <div className="bg-white rounded-full p-2 mr-2">
+                <Image src={arrowRightBlack} alt="arrowRight" />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 
