@@ -1,5 +1,6 @@
 import {Nav} from "@/components/Nav/Nav";
 import Image from "next/image";
+import Link from "next/link";
 import arrowRight from "../../../public/arrowRight.svg";
 import arrowRightBlack from "../../../public/arrowRightBlack.svg";
 import printDashboardMobile from "../../../public/print.svg";
@@ -26,12 +27,16 @@ export default function Home() {
           </div>
           <h1 className="md:mt-8 leading-[110%] font-bold text-white text-[44px] md:text-7xl lg:text-[64px] px-4 max-w-[354px] sm:text-center sm:max-w-[738px] lg:max-w-[876px]">Gerencie seu estoque de uma  forma mais eficiente.</h1>
           <p className="text-white leading-[140%] px-4 text-lg pt-6 max-w-[364px] sm:max-w-[546px] sm:text-center">Otimize seus recursos e maximize sua produtividade com nosso sistema de gestão de estoque eficiente.</p>
-          <div className="flex items-center justify-between text-[#16A2F8] text-lg bg-white rounded-3xl w-[218px] h-12 ml-4 mt-12">
-            <p className="ml-4 font-medium">Vamos começar</p>
-            <div className="bg-[#16A2F8] rounded-full p-2 mr-2">
-              <Image src={arrowRight} alt="arrowRight" />
+
+          <Link href="#plano">
+            <div className="flex items-center justify-between text-[#16A2F8] text-lg bg-white rounded-3xl w-[218px] h-12 ml-4 mt-12">
+              <p className="ml-4 font-medium">Vamos começar</p>
+              <div className="bg-[#16A2F8] rounded-full p-2 mr-2">
+                <Image src={arrowRight} alt="arrowRight" />
+              </div>
             </div>
-          </div>
+          </Link>
+
         </div>
         <div className="overflow-hidden mt-12 ml-[18px] md:ml-9 lg:ml-0 lg:flex lg:justify-center">
           <Image className="max-w-none sm:hidden" src={printDashboardMobile} alt="bgMobileLanding" />
@@ -89,17 +94,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="lg:flex lg:justify-center lg:py-40">
+      <section className="lg:flex lg:justify-center lg:py-40" id="plano">
         <div className="sm:flex sm:flex-col sm:items-center lg:flex-row lg:gap-48 lg:max-w-[1140px]">
           <div>
             <h1 className="font-bold px-4 text-[42px] md:text-[64px] mt-16 leading-[110%] sm:px-0 max-w-[354px] md:max-w-[532px]">Um <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">investimento para cada necessidade.</span></h1>
-
-            <div className="base:hidden lg:flex items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[178px] h-12 mt-[100px]">
-              <p className="ml-4 font-medium">Assinar Plano</p>
-              <div className="bg-white rounded-full p-2 mr-2">
-                <Image src={arrowRightBlack} alt="arrowRight" />
+            <Link href="https://buy.stripe.com/test_dR6eXb4AkeOBecMaEF">
+              <div className="base:hidden lg:flex items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[178px] h-12 mt-[100px] cursor-pointer">
+                <p className="ml-4 font-medium">Assinar Plano</p>
+                <div className="bg-white rounded-full p-2 mr-2">
+                  <Image src={arrowRightBlack} alt="arrowRight" />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="base:bg-[url('/images/cardMobile.svg')] md:bg-[url('/images/cardTablet.svg')] lg:bg-[url('/images/cardDesktop.svg')] max-w-none bg-cover w-[354px] md:w-[532px] h-[468px] md:h-[368px] lg:h-[540px] lg:w-[371px] mx-[18px] mt-14">
@@ -125,14 +131,18 @@ export default function Home() {
               </li>
             </ul>
             <div className="px-6">
-              <button className="bg-white text-[#0037FF] md:hidden w-full md:w-[178px] md:bg-red-500 py-[14px] px-[18px] rounded-3xl mt-[35px]">Assinar Plano</button>
+              <Link href="https://buy.stripe.com/test_dR6eXb4AkeOBecMaEF">
+                <button className="bg-white text-[#0037FF] md:hidden w-full md:w-[178px] md:bg-red-500 py-[14px] px-[18px] rounded-3xl mt-[35px]">Assinar Plano</button>
+              </Link>
             </div>
-            <div className="base:hidden md:flex lg:hidden items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[178px] h-12 mt-[100px]">
-              <p className="ml-4 font-medium">Assinar Plano</p>
-              <div className="bg-white rounded-full p-2 mr-2">
-                <Image src={arrowRightBlack} alt="arrowRight" />
-              </div>
-            </div>
+              <Link href="https://buy.stripe.com/test_dR6eXb4AkeOBecMaEF">
+                <div className="base:hidden md:flex lg:hidden items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[178px] h-12 mt-[100px]">
+                  <p className="ml-4 font-medium">Assinar Plano</p>
+                  <div className="bg-white rounded-full p-2 mr-2">
+                    <Image src={arrowRightBlack} alt="arrowRight" />
+                  </div>
+                </div>
+              </Link>
           </div>
         </div>
       </section>
@@ -140,7 +150,6 @@ export default function Home() {
       <section className="px-4 sm:px-0 sm:flex sm:flex-col sm:items-center">
         <div className="max-w-[354px] md:max-w-[540px] lg:max-w-[600px] lg:flex lg:flex-col lg:items-center">
           <h1 className="mt-24 md:mt-72 lg:mt-28 font-bold text-[44px] md:text-[64px] leading-[110%]">Precisa <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">conversar</span>? Entre em contato.</h1>
-
           <div className="flex items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[285px] h-12 mt-12">
             <p className="ml-4 font-medium">Mensagem via WhatsApp</p>
             <div className="bg-white rounded-full p-2 mr-2">
