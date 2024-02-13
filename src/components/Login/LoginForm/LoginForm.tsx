@@ -35,7 +35,7 @@ export function LoginForm() {
   return (
     <form
       onSubmit={handleSubmit(handleLogin)}
-      className="lg:w-3/4 w-full flex justify-center items-center flex-col"
+      className="flex justify-center items-center flex-col"
     >
       <h1 className={`${jura.className} text-black text-[40px]`}>Login</h1>
       <div className="w-full flex justify-center items-center flex-col gap-2 mt-5">
@@ -44,11 +44,11 @@ export function LoginForm() {
       </div>
       <button
         type="submit"
-        className="bg-[#2651EE] text-white rounded-md w-1/2 h-12 p-2 focus:outline-gray-400 mt-8"
+        className="bg-[#2651EE] text-white rounded-md w-full lg:w-1/2 h-12 p-2 focus:outline-gray-400 mt-8"
       >
         Entrar
       </button>
-      <p className={`${jura.className} w-1/2 mt-5`}>
+      <p className={`${jura.className} w-full mt-5`}>
         Esqueceu a senha?{' '}
         <a href="/" className="text-[#2651EE]">
           Clique aqui.

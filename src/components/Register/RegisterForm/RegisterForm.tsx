@@ -54,11 +54,11 @@ export function RegisterForm() {
       </div>
       <button
         type="submit"
-        className="bg-[#2651EE] text-white rounded-md w-1/2 h-12 p-2 focus:outline-gray-400 mt-8"
+        className="bg-[#2651EE] text-white rounded-md w-full lg:w-1/2 h-12 p-2 focus:outline-gray-400 mt-8"
       >
         Registrar
       </button>
-      <p className={`${jura.className} w-1/2 mt-5`}>
+      <p className={`${jura.className} w-full mt-5`}>
         Esqueceu a senha?{' '}
         <a href="/" className="text-[#2651EE]">
           Clique aqui.

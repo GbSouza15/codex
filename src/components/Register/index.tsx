@@ -6,7 +6,7 @@ export default function LoginComponent() {
     <div className="h-screen flex flex-col lg:flex-row bg-[#04091C]">
       <div className="lg:w-1/2 h-full flex justify-center items-center">
         <Image
-          className="lg:p-2 p-8 z-50"
+          className="lg:p-2 p-8 z-50 mt-20 lg:mt-0"
           src={'images/logo.svg'}
           alt="logo"
           width={400}
@@ -27,7 +27,7 @@ export default function LoginComponent() {
           height={415}
         />
       </div>
-      <div className="lg:w-1/2 flex justify-center items-center flex-col lg:rounded-none rounded-t-3xl bg-white">
+      <div className="lg:w-1/2 mt-20 lg:mt-0 flex justify-center items-center flex-col lg:rounded-none rounded-t-3xl bg-white">
         <RegisterForm />
       </div>
     </div>
