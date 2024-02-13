@@ -73,12 +73,12 @@ export default function Home() {
             <div>
               <Image src={depositSvg} alt="depositSvg" />
               <h2 className="text-3xl font-bold mt-8">Visualize depósitos</h2>
-              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Tenha uma visão detalhada dos depósitos financeiros relacionados ao seu sistema de gerenciamento de estoque, incluindo informações sobre transações, saldos e movimentações de fundos.</p>
+              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Ganhe uma visão panorâmica de todos os seus depósitos em um único painel e identifique facilmente a localização e quantidade de cada mercadoria em cada um deles.</p>
             </div>
             <div>
               <Image src={suppliersSvg} alt="suppliersSvg" />
               <h2 className="text-3xl font-bold mt-8">Registre fornecedores</h2>
-              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Mantenha um registro completo e organizado de todos os fornecedores envolvidos no seu sistema de estoque, incluindo detalhes de contato, histórico de transações e outras informações relevantes.</p>
+              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Mantenha um registro completo e organizado de todos os fornecedores envolvidos no seu sistema de estoque, incluindo detalhes de contato e outras informações relevantes.</p>
             </div>
             <div>
               <Image src={invoiceSvg} alt="invoiceSvg" />
@@ -110,7 +110,8 @@ export default function Home() {
 
           <div className="base:bg-[url('/images/cardMobile.svg')] md:bg-[url('/images/cardTablet.svg')] lg:bg-[url('/images/cardDesktop.svg')] max-w-none bg-cover w-[354px] md:w-[532px] h-[468px] md:h-[368px] lg:h-[540px] lg:w-[371px] mx-[18px] mt-14">
             <p className="text-2xl pt-9 text-[#696C77] px-6">Plano Básico</p>
-            <p className="text-white text-[54px] font-bold mt-6 px-6">R$ 49,99<span className="text-white font-bold text-base">/mês</span></p>
+            <p className="text-white text-[54px] font-bold px-6">R$ 179,99<span className="text-white font-bold text-base">/mês</span></p>
+            <p className="text-lg text-white px-6">+ R$ 0,19 por nota fiscal</p>
 
             <ul className="text-white flex flex-col gap-4 mt-8 md:mt-6 px-6">
               <li className="flex items-center gap-3">
@@ -119,15 +120,15 @@ export default function Home() {
               </li>
               <li className="flex items-center gap-3">
                 <Image src={checkIcon} alt="checkIcon" />
-                <p className="text-white text-lg md:text-sm">Gerenciamento de estoque</p>
+                <p className="text-white text-lg md:text-sm">Gerenciamento de fornecedores</p>
               </li>
               <li className="flex items-center gap-3">
                 <Image src={checkIcon} alt="checkIcon" />
-                <p className="text-white text-lg md:text-sm">Gerenciamento de estoque</p>
+                <p className="text-white text-lg md:text-sm">Gerenciamento de depósitos</p>
               </li>
               <li className="flex items-center gap-3">
                 <Image src={checkIcon} alt="checkIcon" />
-                <p className="text-white text-lg md:text-sm">Gerenciamento de estoque</p>
+                <p className="text-white text-lg md:text-sm">Emissão de notas fiscais</p>
               </li>
             </ul>
             <div className="px-6">
