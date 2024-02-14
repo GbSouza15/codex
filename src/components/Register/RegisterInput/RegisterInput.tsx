@@ -8,8 +8,8 @@ type RegisterInputProps = InputHTMLAttributes<HTMLInputElement> & {
 export const RegisterInput = forwardRef<HTMLInputElement, RegisterInputProps>(
   ({ name, type, label, ...rest }, ref) => {
     return (
-      <div className="flex flex-col w-[280px]">
-        <label className={`${jura.className} text-base`}>{label}</label>
+      <div className="flex flex-col w-[250px]">
+        <label className={`${jura.className} text-sm font-bold`}>{label}</label>
         <input
           {...rest}
           type={type}

@@ -20,20 +20,20 @@ const schema = z.object({
   contact: z.string(),
 });
 
-type LoginFormProps = z.infer<typeof schema>;
+type RegisterFormProps = z.infer<typeof schema>;
 
 export function RegisterForm() {
   const {
     register,
     handleSubmit,
     formState: { errors }
-  } = useForm<LoginFormProps>({
+  } = useForm<RegisterFormProps>({
     resolver: zodResolver(schema),
     mode: 'all',
     reValidateMode: 'onChange'
   });
 
-  function handleLogin(data: LoginFormProps) {
+  function handleLogin(data: RegisterFormProps) {
     console.log(data);
   }
 

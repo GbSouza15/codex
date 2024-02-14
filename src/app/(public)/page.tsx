@@ -19,8 +19,7 @@ export default function Home() {
   return (
     <div>
       <Nav />
-      {/* Hero */}
-      <section className="base:bg-[url('/images/bgMobileLanding.svg')] md:bg-[url('/images/bgTabletLanding.svg')] lg:bg-[url('/images/bgDesktopLanding.svg')] bg-cover h-[800px] md:h-[880px]">
+      <section className="bg-[url('/images/bgMobileLanding.svg')] md:bg-[url('/images/bgTabletLanding.svg')] lg:bg-[url('/images/bgDesktopLanding.svg')] bg-cover h-[800px] md:h-[880px]">
         <div className="pt-[130px] sm:flex sm:flex-col sm:items-center">
           <div className="hidden md:flex justify-center md:text-white md:text-lg md:border-[1px] md:border-[#477BE3] md:rounded-3xl md:w-[218px] py-2 md:mt-12">
             <p className="font-medium">Gerencie seu estoque</p>
@@ -44,7 +43,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="base:bg-[url('/images/bgMobile2.svg')] md:bg-[url('/images/bgTablet2.svg')] lg:bg-[url('/images/bgDesktop2.svg')] bg-cover lg:flex lg:flex-col lg:items-center lg:h-[602px] lg:mt-[650px] mt-[280px] sm:mt-[550px] md:mt-[750px] lg:justify-center lg:p-0">
+      <section className="bg-[url('/images/bgMobile2.svg')] md:bg-[url('/images/bgTablet2.svg')] lg:bg-[url('/images/bgDesktop2.svg')] bg-cover lg:flex lg:flex-col lg:items-center lg:h-[602px] lg:mt-[650px] mt-[280px] sm:mt-[550px] md:mt-[750px] lg:justify-center lg:p-0">
           <div className="sm:flex sm:flex-col sm:items-center lg:items-start lg:max-w-[1140px]">
             <h1 className="text-white font-bold text-[44px] md:text-[64px] px-4 pt-16 max-w-[354px] md:max-w-[532px] lg:max-w-[830px] leading-[110%] sm:px-0">Nossa especialidade é impulsionar seus projetos.</h1>
 
@@ -99,7 +98,7 @@ export default function Home() {
           <div>
             <h1 className="font-bold px-4 text-[42px] md:text-[64px] mt-16 leading-[110%] sm:px-0 max-w-[354px] md:max-w-[532px]">Um <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">investimento para cada necessidade.</span></h1>
             <Link href="https://buy.stripe.com/test_dR6eXb4AkeOBecMaEF">
-              <div className="base:hidden lg:flex items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[178px] h-12 mt-[100px] cursor-pointer">
+              <div className="hidden lg:flex items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[178px] h-12 mt-[100px] cursor-pointer">
                 <p className="ml-4 font-medium">Assinar Plano</p>
                 <div className="bg-white rounded-full p-2 mr-2">
                   <Image src={arrowRightBlack} alt="arrowRight" />
@@ -108,9 +107,9 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="base:bg-[url('/images/cardMobile.svg')] md:bg-[url('/images/cardTablet.svg')] lg:bg-[url('/images/cardDesktop.svg')] max-w-none bg-cover w-[354px] md:w-[532px] h-[468px] md:h-[368px] lg:h-[540px] lg:w-[371px] mx-[18px] mt-14">
-            <p className="text-2xl pt-9 text-[#696C77] px-6">Plano Básico</p>
-            <p className="text-white text-[54px] font-bold px-6">R$ 179,99<span className="text-white font-bold text-base">/mês</span></p>
+          <div className="bg-[url('/images/cardMobile.svg')] md:bg-[url('/images/cardTablet.svg')] lg:bg-[url('/images/cardDesktop.svg')] max-w-none bg-cover w-[354px] md:w-[532px] h-[468px] md:h-[368px] lg:h-[540px] lg:w-[371px] mx-[18px] mt-14">
+            <p className="text-2xl pt-9 text-[#696C77] px-6 hidden md:block">Plano Básico</p>
+            <p className="text-white text-[54px] font-bold px-6 pt-5 md:pt-0">R$ 179,99<span className="text-white font-bold text-base">/mês</span></p>
             <p className="text-lg text-white px-6">+ R$ 0,19 por nota fiscal</p>
 
             <ul className="text-white flex flex-col gap-4 mt-8 md:mt-6 px-6">
@@ -137,7 +136,7 @@ export default function Home() {
               </Link>
             </div>
               <Link href="https://buy.stripe.com/test_dR6eXb4AkeOBecMaEF">
-                <div className="base:hidden md:flex lg:hidden items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[178px] h-12 mt-[100px]">
+                <div className="hidden md:flex lg:hidden items-center justify-between text-white text-lg bg-[#04091C] rounded-3xl w-[178px] h-12 mt-[100px]">
                   <p className="ml-4 font-medium">Assinar Plano</p>
                   <div className="bg-white rounded-full p-2 mr-2">
                     <Image src={arrowRightBlack} alt="arrowRight" />
