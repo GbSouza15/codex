@@ -9,7 +9,7 @@ import iconArrowsProduct from "../../../../../public/images/iconArrowsProduct.sv
 
 export default function DashboardPage() {
     return (
-        <main className="bg-[#04091C]">
+        <main className="bg-[#04091C] h-screen">
             <div className="px-5 pt-8">
                 <div className="flex items-center gap-2">
                     <Image src={logoWhiteCodex} alt="Logo White Codex" />

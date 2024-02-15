@@ -21,7 +21,7 @@ export default function LowStock(): JSX.Element {
                         <TableHead className="text-right">Quantidade</TableHead>
                     </TableRow>
                 </TableHeader> 
-                <TableBody>
+                <TableBody className="text-gray-400">
                     <TableRow>
                         <TableCell className="font-medium">34345</TableCell>
                         <TableCell>Mesa com 4 cadeiras</TableCell>

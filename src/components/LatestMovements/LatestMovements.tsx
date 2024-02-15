@@ -23,7 +23,7 @@ export default function LatestMovements(): JSX.Element {
                         <TableHead>Data</TableHead>
                     </TableRow>
                 </TableHeader> 
-                <TableBody>
+                <TableBody className="text-gray-400">
                     <TableRow>
                         <TableCell className="font-medium">34345</TableCell>
                         <TableCell>Mesa com 4 cadeiras</TableCell>
