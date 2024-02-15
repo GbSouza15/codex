@@ -15,7 +15,7 @@ export default function LatestMovements(): JSX.Element {
             <h2 className="text-xl font-bold text-white">Últimas Movimentações</h2>
             <Table className="text-white mt-3">
                 <TableHeader>
-                    <TableRow className="bg-[#222A38] border-none">
+                    <TableRow className="bg-[#222A38] border-none text-[#ffffff]">
                         <TableHead className="w-[100px]">ID</TableHead>
                         <TableHead>N.Produto</TableHead>
                         <TableHead>Tipo</TableHead>

@@ -9,10 +9,10 @@ import iconArrowsProduct from "../../../../../public/images/iconArrowsProduct.sv
 
 export default function DashboardPage() {
     return (
-        <main className="bg-[#04091C] h-screen">
+        <section className="bg-[#04091C] min-h-screen">
             <div className="px-5 pt-8">
                 <div className="flex items-center gap-2">
-                    <Image src={logoWhiteCodex} alt="Logo White Codex" />
+                    <Image priority={true} src={logoWhiteCodex} alt="Logo White Codex" />
                     <h1 className="text-white text-2xl font-bold">Dashboard</h1>
                 </div>
                 <NavErm />
@@ -25,6 +25,6 @@ export default function DashboardPage() {
                     <LowStock />
                 </div>
             </div>
-        </main>
+        </section>
     )
 }
