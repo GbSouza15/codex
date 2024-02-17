@@ -9,18 +9,18 @@ import iconArrowsProduct from "../../../../../public/images/iconArrowsProduct.sv
 
 export default function DashboardPage() {
     return (
-        <section className="bg-[#04091C] min-h-screen">
+        <section className="bg-[#04091C] min-h-screen md:flex md:justify-center">
             <div className="px-5 pt-8">
                 <div className="flex items-center gap-2">
                     <Image priority={true} src={logoWhiteCodex} alt="Logo White Codex" />
                     <h1 className="text-white text-2xl font-bold">Dashboard</h1>
                 </div>
                 <NavErm />
-                <div className="flex flex-col gap-5 mt-10">
+                <div className="flex flex-col sm:flex-row gap-3 mt-10">
                     <CardsErm title="Total de Produtos" icon={iconCardProduct} number="34.600"/>
                     <CardsErm title="Movimentações" icon={iconArrowsProduct} buttonBg="#2651EE" buttonTitle="Ver produtos"/>
                 </div>
-                <div>
+                <div className="lg:flex gap-2">
                     <LatestMovements />
                     <LowStock />
                 </div>

@@ -11,7 +11,7 @@ import {
 
 export default function LatestMovements(): JSX.Element {
     return (
-        <div className="bg-[#111827] mt-4 px-3 pt-5 rounded-xl">
+        <div className="bg-[#111827] mt-4 px-3 pt-5 rounded-xl max-w-[560px]">
             <h2 className="text-xl font-bold text-white">Últimas Movimentações</h2>
             <Table className="text-white mt-3">
                 <TableHeader>

@@ -6,7 +6,7 @@ import Suppliers from "@/components/SuppliersTable/SuppliersTable"
 
 export default function FornecedoresPage() {
     return (
-        <section className="bg-[#04091C] min-h-screen">
+        <section className="bg-[#04091C] min-h-screen md:flex md:justify-center pb-8">
             <div className="px-5 pt-8">
                 <div className="flex items-center gap-2">
                     <Image priority={true} src={logoWhiteCodex} alt="Logo White Codex" />

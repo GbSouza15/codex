@@ -24,8 +24,8 @@ export default function NavErm(): JSX.Element {
 
   return (
     <div className="mt-5">
-      <ul className="text-white flex flex-col text-xs gap-5 w-fit">
-        <li className='w-1/2'>
+      <ul className="text-white flex flex-col sm:flex-row text-xs gap-5 w-fit">
+        <li>
           <Link prefetch={false} className='flex items-center gap-2' href={{
             pathname: '/erm/dashboard',
           }}>

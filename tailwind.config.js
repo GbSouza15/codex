@@ -9,6 +9,12 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      'sm': '500px',
+      'md': '810px',
+      'lg': '1214px',
+      "2xl": "1400px",
+    },
     container: {
       center: true,
       padding: "2rem",

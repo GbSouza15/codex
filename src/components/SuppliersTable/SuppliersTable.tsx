@@ -18,7 +18,7 @@ export default async function Suppliers() {
   const data = await getData()
 
   return (
-    <div className="mx-auto py-5">
+    <div className="mx-auto py-5 lg:min-w-[950px]">
       <DataTable columns={columns} data={data} />
     </div>
   )

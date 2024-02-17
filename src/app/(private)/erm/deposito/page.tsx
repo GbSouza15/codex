@@ -6,7 +6,7 @@ import WareHouse from "@/components/WareHouse/WareHouse"
 
 export default function DepositoPage() {
     return (
-        <section className="bg-[#04091C] min-h-screen">
+        <section className="bg-[#04091C] min-h-screen md:flex md:justify-center">
             <div className="px-5 pt-8">
                 <div className="flex items-center gap-2">
                     <Image priority={true} src={logoWhiteCodex} alt="Logo White Codex" />

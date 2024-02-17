@@ -10,8 +10,8 @@ import WareHouseProducts from "../WarnHouseTable/warnHouseTable"
 
 export default function WareHouse() {
     return (
-        <Accordion type="single" collapsible className="mt-5">
-            <AccordionItem value="item-1">
+        <Accordion type="single" collapsible className="mt-5 lg:min-w-[970px]">
+            <AccordionItem value="item-1" className="border-none">
             <AccordionTrigger className="bg-[#222A38] text-white rounded-[5px] px-5">
                 <div className="flex items-center gap-6">
                     <p>Depósito X</p>
