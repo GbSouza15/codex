@@ -132,7 +132,7 @@ export default async function Products() {
   const data = await getData()
 
   return (
-    <div className="mx-auto py-5 lg:min-w-[940px]">
+    <div className="mx-auto py-5 md:min-w-[560px] lg:min-w-[940px]">
       <DataTable columns={columns} data={data} />
     </div>
   )
