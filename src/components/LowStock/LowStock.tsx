@@ -12,7 +12,7 @@ import {
 export default function LowStock(): JSX.Element {
     return (
         <div className="bg-[#111827] mt-4 px-3 pt-5 rounded-xl max-w-[560px]">
-            <h2 className="text-xl font-bold text-white">Estoque baixo</h2>
+            <h2 className="text-xl font-bold text-white 2xl:text-2xl">Estoque baixo</h2>
             <Table className="text-white mt-3">
                 <TableHeader>
                     <TableRow className="bg-[#222A38] border-none">

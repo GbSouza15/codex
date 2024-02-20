@@ -15,8 +15,8 @@ export default function DashboardPage() {
             <div className="px-5 pt-8">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <Image priority={true} src={logoWhiteCodex} alt="Logo White Codex" />
-                        <h1 className="text-white text-2xl font-bold">Dashboard</h1>
+                        <Image priority={true} className="2xl:w-6" src={logoWhiteCodex} alt="Logo White Codex" />
+                        <h1 className="text-white text-2xl 2xl:text-3xl font-bold">Dashboard</h1>
                     </div>
                     <User />
                 </div>

@@ -16,7 +16,7 @@ export default function User() {
         <div>
             <DropdownMenu>
                 <DropdownMenuTrigger>
-                    <div className="bg-[#2651EE] p-2 rounded-full cursor-pointer">
+                    <div className="bg-[#222A38] p-2 rounded-full cursor-pointer">
                         <UserRound color="white"/>
                     </div>
                 </DropdownMenuTrigger>
