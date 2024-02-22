@@ -11,7 +11,9 @@ export function Nav() {
                 <Link href="#plano">
                     <button className="text-white bg-white bg-opacity-30 w-40 h-10 hidden md:block rounded-3xl">Vamos começar</button>
                 </Link>
+                <Link href="/login">
                     <button className="text-white bg-gradient-to-r from-[#1a2036] to-[#036cbd] w-40 h-10 rounded-3xl shadow-lg">Login</button>
+                </Link>
             </div>
         </div>
     )
