@@ -19,46 +19,41 @@ export default function Home() {
   return (
     <div>
       <Nav />
-      <section className="bg-[url('/images/bgMobileLanding.svg')] md:bg-[url('/images/bgTabletLanding.svg')] lg:bg-[url('/images/bgDesktopLanding.svg')] bg-cover h-[800px] md:h-[880px]">
+      <section className="bg-[url('/images/bgMobileLanding.svg')] md:bg-[url('/images/bgTabletLanding.svg')] lg:bg-[url('/images/bgDesktopLanding.svg')] bg-cover h-[600px] md:h-[880px] lg:h-[700px]">
         <div className="pt-[130px] sm:flex sm:flex-col sm:items-center">
           <div className="hidden md:flex justify-center md:text-white md:text-lg md:border-[1px] md:border-[#477BE3] md:rounded-3xl md:w-[218px] py-2 md:mt-12">
-            <p className="font-medium">Gerencie seu estoque</p>
+            <p className="font-medium">Facilidade de opinião</p>
           </div>
-          <h1 className="md:mt-8 leading-[110%] font-bold text-white text-[44px] md:text-7xl lg:text-[64px] px-4 max-w-[354px] sm:text-center sm:max-w-[738px] lg:max-w-[876px]">Gerencie seu estoque de uma  forma mais eficiente.</h1>
-          <p className="text-white leading-[140%] px-4 text-lg pt-6 max-w-[364px] sm:max-w-[546px] sm:text-center">Otimize seus recursos e maximize sua produtividade com nosso sistema de gestão de estoque eficiente.</p>
+          <h1 className="md:mt-8 leading-[110%] font-bold text-white text-[44px] md:text-7xl lg:text-[64px] px-4 max-w-[354px] sm:text-center sm:max-w-[738px] lg:max-w-[876px]">Capture, gerencie e compartilhe suas opiniões.</h1>
+          <p className="text-white leading-[140%] px-4 text-lg pt-6 max-w-[364px] sm:max-w-[546px] sm:text-center">OpinionEasy é uma ferramenta para automatizar a coleta de opiniões dos seus clientes, gerenciá-las, e compatilhá-las.</p>
 
-          <Link href="#plano">
-            <div className="flex items-center justify-between text-[#16A2F8] text-lg bg-white rounded-3xl w-[218px] h-12 ml-4 mt-12">
-              <p className="ml-4 font-medium">Vamos começar</p>
-              <div className="bg-[#16A2F8] rounded-full p-2 mr-2">
-                <Image src={arrowRight} alt="arrowRight" />
-              </div>
-            </div>
+          <Link href="#plano" className="mt-12 ml-4">
+            <button className="text-[#16A2F8] text-lg bg-white py-2 px-4 rounded-[10px] shadow-lg">Vamos Começar</button>
           </Link>
 
         </div>
-        <div className="overflow-hidden mt-12 ml-[18px] md:ml-9 lg:ml-0 lg:flex lg:justify-center">
+        {/* <div className="overflow-hidden mt-12 ml-[18px] md:ml-9 lg:ml-0 lg:flex lg:justify-center">
           <Image className="max-w-none sm:hidden" src={printDashboardMobile} alt="bgMobileLanding" />
           <Image className="max-w-none hidden sm:block" src={printDashboardTablet} alt="bgMobileLanding" />
-        </div>
+        </div> */}
       </section>
 
-      <section className="bg-[url('/images/bgMobile2.svg')] md:bg-[url('/images/bgTablet2.svg')] lg:bg-[url('/images/bgDesktop2.svg')] bg-cover lg:flex lg:flex-col lg:items-center lg:h-[602px] lg:mt-[650px] mt-[280px] sm:mt-[550px] md:mt-[750px] lg:justify-center lg:p-0">
+      <section className="lg:flex lg:flex-col lg:items-center lg:justify-center pt-16">
           <div className="sm:flex sm:flex-col sm:items-center lg:items-start lg:max-w-[1140px]">
-            <h1 className="text-white font-bold text-[44px] md:text-[64px] px-4 pt-16 max-w-[354px] md:max-w-[532px] lg:max-w-[830px] leading-[110%] sm:px-0">Nossa especialidade é impulsionar seus projetos.</h1>
+            <h1 className="text-black font-bold text-[44px] md:text-[64px] px-4 pt-16 max-w-[354px] md:max-w-[532px] lg:max-w-[830px] leading-[110%] sm:px-0">Nossa especialidade é impulsionar seus projetos.</h1>
 
             <div className="px-4 pt-[52px] pb-16 flex flex-col gap-8 lg:flex-row lg:px-0">
               <div className="max-w-[354px] md:max-w-[532px]">
-                <h2 className="text-white font-bold text-3xl">Eficiência Operacional.</h2>
-                <p className="text-gray-300 text-base leading-[140%] mt-[10px]">Otimize seus processos com nosso sistema de gerenciamento de estoque. Ganhe eficiência e mantenha seu negócio em pleno funcionamento.</p>
+                <h2 className="text-black font-bold text-3xl">Eficiência Operacional.</h2>
+                <p className="text-[#909395] text-base leading-[140%] mt-[10px]">Otimize seus processos com nosso sistema de gerenciamento de estoque. Ganhe eficiência e mantenha seu negócio em pleno funcionamento.</p>
               </div>
               <div className="max-w-[354px] md:max-w-[532px]">
-                <h2 className="text-white font-bold text-3xl">Design Intuitivo.</h2>
-                <p className="text-gray-300 text-base leading-[140%] mt-[10px]">Controle seu estoque de forma fácil e rápida com nosso design simples e intuitivo. Navegue sem complicações e otimize sua gestão.</p>
+                <h2 className="text-black font-bold text-3xl">Design Intuitivo.</h2>
+                <p className="text-[#909395] text-base leading-[140%] mt-[10px]">Controle seu estoque de forma fácil e rápida com nosso design simples e intuitivo. Navegue sem complicações e otimize sua gestão.</p>
               </div>
               <div className="max-w-[354px] md:max-w-[532px]">
-                <h2 className="text-white font-bold text-3xl">Emissão de NF.</h2>
-                <p className="text-gray-300 text-base leading-[140%] mt-[10px]">Gerencie seu estoque e emita notas fiscais de maneira eficiente, tudo em um só lugar.</p>
+                <h2 className="text-black font-bold text-3xl">Emissão de NF.</h2>
+                <p className="text-[#909395] text-base leading-[140%] mt-[10px]">Gerencie seu estoque e emita notas fiscais de maneira eficiente, tudo em um só lugar.</p>
               </div>
             </div>
           </div>
