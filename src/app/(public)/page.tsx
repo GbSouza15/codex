@@ -1,9 +1,7 @@
 import {Nav} from "@/components/Nav/Nav";
 import Image from "next/image";
 import Link from "next/link";
-import arrowRight from "../../../public/arrowRight.svg";
 import arrowRightBlack from "../../../public/arrowRightBlack.svg";
-import printDashboardMobile from "../../../public/print.svg";
 import depositSvg from "../../../public/deposit.svg";
 import invoiceSvg from "../../../public/invoice.svg";
 import suppliersSvg from "../../../public/suppliers.svg";
@@ -13,7 +11,6 @@ import logoBlack from "../../../public/logoBlack.svg";
 import twitterIcon from "../../../public/twitter.svg";
 import instagramIcon from "../../../public/instagram.svg";
 import whatsappIcon from "../../../public/whatsapp.svg";
-import printDashboardTablet from "../../../public/images/printDashboardTablet.svg";
 
 export default function Home() {
   return (
@@ -21,39 +18,34 @@ export default function Home() {
       <Nav />
       <section className="bg-[url('/images/bgMobileLanding.svg')] md:bg-[url('/images/bgTabletLanding.svg')] lg:bg-[url('/images/bgDesktopLanding.svg')] bg-cover h-[600px] md:h-[880px] lg:h-[700px]">
         <div className="pt-[130px] sm:flex sm:flex-col sm:items-center">
-          <div className="hidden md:flex justify-center md:text-white md:text-lg md:border-[1px] md:border-[#477BE3] md:rounded-3xl md:w-[218px] py-2 md:mt-12">
-            <p className="font-medium">Facilidade de opinião</p>
+          <div className="hidden md:flex justify-center md:text-white md:text-lg md:border-[1px] md:border-[#477BE3] md:rounded-3xl md:w-[260px] py-2 md:mt-12">
+            <p className="font-medium">Criação de sistemas web</p>
           </div>
-          <h1 className="md:mt-8 leading-[110%] font-bold text-white text-[44px] md:text-7xl lg:text-[64px] px-4 max-w-[354px] sm:text-center sm:max-w-[738px] lg:max-w-[876px]">Capture, gerencie e compartilhe suas opiniões.</h1>
-          <p className="text-white leading-[140%] px-4 text-lg pt-6 max-w-[364px] sm:max-w-[546px] sm:text-center">OpinionEasy é uma ferramenta para automatizar a coleta de opiniões dos seus clientes, gerenciá-las, e compatilhá-las.</p>
+          <h1 className="md:mt-8 leading-[110%] font-bold text-white text-[44px] md:text-7xl lg:text-[64px] px-4 max-w-[354px] sm:text-center sm:max-w-[738px] lg:max-w-[876px]">Desenvolvendo sistemas web que impulsionam o seu negócio.</h1>
+          <p className="text-white leading-[140%] px-4 text-lg pt-6 max-w-[364px] sm:max-w-[546px] sm:text-center">Na Codex, combinamos expertise técnica com um design envolvente para criar experiências online memoráveis e funcionais.</p>
 
           <Link href="#plano" className="mt-12 ml-4">
             <button className="text-[#16A2F8] text-lg bg-white py-2 px-4 rounded-[10px] shadow-lg">Vamos Começar</button>
           </Link>
-
         </div>
-        {/* <div className="overflow-hidden mt-12 ml-[18px] md:ml-9 lg:ml-0 lg:flex lg:justify-center">
-          <Image className="max-w-none sm:hidden" src={printDashboardMobile} alt="bgMobileLanding" />
-          <Image className="max-w-none hidden sm:block" src={printDashboardTablet} alt="bgMobileLanding" />
-        </div> */}
       </section>
 
       <section className="lg:flex lg:flex-col lg:items-center lg:justify-center pt-16">
           <div className="sm:flex sm:flex-col sm:items-center lg:items-start lg:max-w-[1140px]">
-            <h1 className="text-black font-bold text-[44px] md:text-[64px] px-4 pt-16 max-w-[354px] md:max-w-[532px] lg:max-w-[830px] leading-[110%] sm:px-0">Nossa especialidade é impulsionar seus projetos.</h1>
+            <h1 className="text-black font-bold text-[44px] md:text-[64px] px-4 pt-16 max-w-[354px] md:max-w-[532px] lg:max-w-[830px] leading-[110%] sm:px-0">Maximize a satisfação dos seus clientes!</h1>
 
             <div className="px-4 pt-[52px] pb-16 flex flex-col gap-8 lg:flex-row lg:px-0">
               <div className="max-w-[354px] md:max-w-[532px]">
-                <h2 className="text-black font-bold text-3xl">Eficiência Operacional.</h2>
-                <p className="text-[#909395] text-base leading-[140%] mt-[10px]">Otimize seus processos com nosso sistema de gerenciamento de estoque. Ganhe eficiência e mantenha seu negócio em pleno funcionamento.</p>
+                <h2 className="text-black font-bold text-3xl">Elevando a experiência do usuário.</h2>
+                <p className="text-[#909395] text-base leading-[140%] mt-[10px]">Na Codex, estamos empenhados em garantir a satisfação dos seus clientes. Nossa missão é criar sistemas web que não apenas atendam, mas superem as expectativas, proporcionando uma experiência excepcional em cada interação.</p>
               </div>
               <div className="max-w-[354px] md:max-w-[532px]">
-                <h2 className="text-black font-bold text-3xl">Design Intuitivo.</h2>
-                <p className="text-[#909395] text-base leading-[140%] mt-[10px]">Controle seu estoque de forma fácil e rápida com nosso design simples e intuitivo. Navegue sem complicações e otimize sua gestão.</p>
+                <h2 className="text-black font-bold text-3xl">Desenvolvimento de Sistemas Web Personalizados.</h2>
+                <p className="text-[#909395] text-base leading-[140%] mt-[10px]">Desenvolvemos soluções web personalizadas que refletem a identidade e as necessidades únicas do seu negócio. Desde sites responsivos até aplicativos web avançados, estamos aqui para transformar suas ideias em realidade digital.</p>
               </div>
               <div className="max-w-[354px] md:max-w-[532px]">
-                <h2 className="text-black font-bold text-3xl">Emissão de NF.</h2>
-                <p className="text-[#909395] text-base leading-[140%] mt-[10px]">Gerencie seu estoque e emita notas fiscais de maneira eficiente, tudo em um só lugar.</p>
+                <h2 className="text-black font-bold text-3xl">Manutenção e Suporte Técnico.</h2>
+                <p className="text-[#909395] text-base leading-[140%] mt-[10px]">Entendemos a importância de manter seus sistemas web funcionando sem problemas. Oferecemos serviços abrangentes de manutenção e suporte técnico para garantir que sua presença online esteja sempre operando com eficiência e confiabilidade.</p>
               </div>
             </div>
           </div>
@@ -61,23 +53,23 @@ export default function Home() {
 
       <section className="pb-16 lg:py-40 lg:flex lg:justify-center">
         <div className="sm:flex sm:flex-col sm:items-center lg:flex-row lg:items-start lg:gap-40 lg:max-w-[1140px]">
-          <h1 className="font-bold px-4 text-[44px] md:text-[64px] mt-16 leading-[110%] sm:px-0 max-w-[354px] md:max-w-[532px] lg:max-w-[432px]">Tudo o que você <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">precisa. </span> Em um <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">dashboard.</span></h1>
+          <h1 className="font-bold px-4 text-[44px] md:text-[64px] mt-16 leading-[110%] sm:px-0 max-w-[354px] md:max-w-[532px] lg:max-w-[432px]">Tudo o que você <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">precisa, </span> Oferecemos para <span className="bg-gradient-to-r from-[#113CC7] to-[#26A0FE] bg-clip-text text-transparent">você.</span></h1>
 
           <div className="px-4 flex flex-col gap-9 mt-14 sm:max-w-[354px] md:max-w-[532px] sm:px-0 lg:grid lg:grid-cols-2">
             <div>
               <Image src={depositSvg} alt="depositSvg" />
-              <h2 className="text-3xl font-bold mt-8">Visualize depósitos</h2>
-              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Ganhe uma visão panorâmica de todos os seus depósitos em um único painel e identifique facilmente a localização e quantidade de cada mercadoria em cada um deles.</p>
+              <h2 className="text-3xl font-bold mt-8">Centralize suas Opiniões</h2>
+              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Visualize todas as opiniões dos seus clientes em um único dashboard intuitivo. Obtenha uma visão panorâmica de cada feedback e identifique facilmente tendências e áreas de destaque.</p>
             </div>
             <div>
               <Image src={suppliersSvg} alt="suppliersSvg" />
-              <h2 className="text-3xl font-bold mt-8">Registre fornecedores</h2>
-              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Mantenha um registro completo e organizado de todos os fornecedores envolvidos no seu sistema de estoque, incluindo detalhes de contato e outras informações relevantes.</p>
+              <h2 className="text-3xl font-bold mt-8">Registre os Clientes</h2>
+              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Mantenha um registro completo e organizado de todos os clientes que compartilham suas opiniões. Capture detalhes de contato e outras informações relevantes para uma gestão eficiente do feedback.</p>
             </div>
             <div>
               <Image src={invoiceSvg} alt="invoiceSvg" />
-              <h2 className="text-3xl font-bold mt-8">Gere Notas fiscais</h2>
-              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Crie de maneira eficiente e precisa notas fiscais para todas as transações relacionadas ao seu estoque, garantindo conformidade com as regulamentações fiscais e facilitando processos contábeis.</p>
+              <h2 className="text-3xl font-bold mt-8">Refine Suas Avaliações</h2>
+              <p className="text-base text-[#909395] mt-[18px] leading-[140%]">Utilize nosso filtro inteligente para listar opiniões com base nas estrelas atribuídas pelos clientes. Classifique e visualize facilmente as avaliações de acordo com sua classificação, permitindo uma análise mais detalhada e direcionada do feedback recebido.</p>
             </div>
             <div>
               <Image src={trainingSvg} alt="trainingSvg" />
@@ -161,8 +153,8 @@ export default function Home() {
           <div className="lg:flex gap-[500px]">
             <div>
               <div>
-                <Image src={logoBlack} alt="logoBlack" />
-                <p className="text-[#909395] text-2xl leading-[33.6px] mt-6 lg:max-w-[361px]">Desenvolvimento de sistemas web personalizados.</p>
+                <Image src={logoBlack} alt="logoBlack" width={100}/>
+                <p className="text-[#909395] text-2xl leading-[33.6px] mt-6 lg:max-w-[361px]">Capture, gerencie e compartilhe suas opiniões.</p>
               </div>
 
               <div className="mt-16">
@@ -171,9 +163,6 @@ export default function Home() {
                   <ul className="flex items-center gap-[18px]">
                     <li>
                       <Image src={twitterIcon} alt="twitterIcon" />
-                    </li>
-                    <li>
-                      <Image src={instagramIcon} alt="instagramIcon" />
                     </li>
                     <li>
                       <Image src={whatsappIcon} alt="whatsappIcon" />
@@ -205,9 +194,8 @@ export default function Home() {
             </div>
           </div>
 
-
           <div className="mt-16 md:flex md:items-center md:gap-9 lg:gap-0 lg:justify-between">
-              <p className="text-base text-[#909395]">©2024 CodeX, Inc.</p>
+            <p className="text-base text-[#909395]">©2024 CodeX, Inc.</p>
             <div className="flex items-center gap-6 mt-6 md:mt-0">
               <p className="text-base text-[#909395]">Termos e serviços</p>
               <p className="text-base text-[#909395]">Privacidade</p>
